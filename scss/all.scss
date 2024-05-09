@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "initial";
+@import "table/table";
+
+
+// 載入思源宋體 Medium
+// font-family: 'Noto Serif TC', serif;
+// font-weight: 500;
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+
+*{
+  transition: padding 0.3s, width 0.3s, max-width 0.3s, min-width 0.3s, min-height 0.3s, font-size 0.3s, background-image 0.3s, transform 0.3s, filter 0.3s;
+}
+
+em{
+  font-style: normal;
+}
+
+.ossian{
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  // padding: 0 1em;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 100%;
+  line-height: 1.75;
+  background-color: #476e30;
+  // background-image: url(../images/bg-desktop.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+@import "rwd";
