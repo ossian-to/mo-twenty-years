@@ -1,0 +1,47 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5px;
+  // margin: 2em auto;
+  // max-width: 300px;
+  width: 100%;
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked {
+      + label {
+        color: black;
+        background-color: white;
+        transform: translatey(1px);
+        + .tab-content {
+          display: block;
+        }
+      }
+    }
+  }
+
+  label {
+    padding: 0.5em 0.75em;
+    color: $color-gray-2;
+    border: 1px solid $color-gray-2;
+    border-bottom: unset;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    order: 0;
+    &:hover{
+      color: black;
+    }
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 1em;
+    width: 100%;
+    border: 1px solid $color-gray-2;
+    border-radius: 5px;
+    order: 1;
+  }
+}

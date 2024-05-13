@@ -15,12 +15,293 @@
   <meta property="og:image" content="https://圖檔的絕對路徑/assets/images/fb-1200x640.jpg"><!--圖檔路徑需改成絕對路徑-->
   <meta property="og:site_name" content="寶從練天 20 載：懷舊的滋味，打寶練等最對味，一直肝一直掉寶。">
 
-  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/all.css?v=1.0">
+  <link rel="stylesheet" href="assets/css/glightbox.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <script src="assets/js/glightbox.js"></script>
+  <script src="assets/js/sweetalert2.js"></script>
 
 </head>
 <body>
   <div class="ossian">
-    
+
+    <!-- 置頂的導覽 Bar .........................................-->
+    <label for="menu-switch" class="switch-open"></label>
+    <input type="checkbox" id="menu-switch">
+    <div class="nav-bar">
+      <nav class="nav-container" id="navbar">
+        <label for="menu-switch" class="switch-close"></label>
+        <ul class="nav">
+          <li><a href="#a">頁首</a></li>
+          <li><a href="#b">年度回收日</a></li>
+          <li><a href="#c">周年慶歡樂送</a></li>
+          <li><a href="#d">二十載簽到禮</a></li>
+          <li><a href="#e">R服羊佗出沒</a></li>
+        </ul>
+        <ul class="share-tool">
+          <li class="icon-home"><a href="https://mo.lager.com.tw/default/index" target="_blank"></a></li>
+          <li class="icon-member"><a href="https://member.lager.com.tw/index/register" target="_blank"></a></li>
+          <li class="icon-facebook"><a href="https://www.facebook.com/profile.php?id=100063789796026" target="_blank"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 置頂的導覽 Bar 結束 .....................................-->
+
+
+    <!-- 主視覺................................................. -->
+    <section class="main" id="a">
+      <article>
+        <!-- 遊戲 LOGO -->
+        <figure class="game-logo"><img src="assets/images/logo-game.png" alt="天外 Online 遊戲 LOGO"></figure>
+        <!-- 活動標題 -->
+        <figure class="site-title" data-aos="zoom-in" data-aos-duration="500"><img src="assets/images/site-title.png" alt="寶從練天 20 載"></figure>
+        <img src="assets/images/obj-1.png" class="obj-1" alt="角色一" data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/images/obj-2.png" class="obj-2" alt="角色二" data-aos="fade-left" data-aos-duration="1000">
+        <img src="assets/images/obj-3.png" class="obj-3" alt="角色三">
+      </article>
+    </section>
+    <!-- 主視覺結束............................................. -->
+
+
+    <!-- 年度回收日............................................. -->
+    <section class="recycling-day" id="b">
+      <article>
+        <figure class="recycling-day-title" data-aos="zoom-in" data-aos-duration="500"><img src="assets/images/title-1.png" alt="年度回收日標題"></figure>
+        <img src="assets/images/obj-4.png" alt="漫畫-背景" class="comics">
+        <img src="assets/images/obj-5.png" alt="角色群像" class="obj-5" data-aos="fade-left" data-aos-duration="1000">
+        <div class="recycling-day-info" data-aos="zoom-in" data-aos-duration="1000">
+          活動時間：2024年07月xx日(三) 18:00 ~ 2024年07月xx日(三) 12:00<br>
+          伺服器：天外飛仙、轉運站<br>
+          活動地點：雲海村民房 (37,157) xx道人
+        </div>
+        <ul class="find-game-map">
+          <li data-aos="zoom-in" data-aos-duration="600"><a href="assets/images/maps/max/01.png" data-gallery="gallery1" class="glightbox"><img src="assets/images/maps/mix/01.png" alt="雲海村民房"></a></li>
+          <li data-aos="zoom-in" data-aos-duration="800"><a href="assets/images/maps/max/02.png" data-gallery="gallery1" class="glightbox"><img src="assets/images/maps/mix/02.png" alt="不動道人"></a></li>
+          <li data-aos="zoom-in" data-aos-duration="1000"><a href="assets/images/maps/max/03.png" data-gallery="gallery1" class="glightbox"><img src="assets/images/maps/mix/03.png" alt="流水道人"></a></li>
+          <li data-aos="zoom-in" data-aos-duration="1200"><a href="assets/images/maps/max/04.png" data-gallery="gallery1" class="glightbox"><img src="assets/images/maps/mix/04.png" alt="石頭道人"></a></li>
+        </ul>
+        <figure class="btn-gift-1 bg-p" data-aos="zoom-in" data-aos-duration="1000">
+          <a href="" id="btnA">
+            <img src="assets/images/btn-gift-1.png" alt="活動獎品" data-aos="zoom-in" data-aos-duration="1000">
+          </a>
+        </figure>
+        <figure class="title-1-1"><img src="assets/images/title-1-1.png" alt="活動方式"></figure>
+        <ul class="step">
+          <li data-aos="zoom-in" data-aos-duration="600">
+            <figure class="step-position"><img src="assets/images/number/1.png" alt="1"></figure>
+            玩家在活動時間內，向指定的NPC繳交指定的物品。
+          </li>
+          <li data-aos="zoom-in" data-aos-duration="800">
+            <figure class="step-position"><img src="assets/images/number/2.png" alt="2"></figure>
+            玩家所有繳交2021年開放的新地圖的物品都可累加記算。
+          </li>
+          <li data-aos="zoom-in" data-aos-duration="1000">
+            <figure class="step-position"><img src="assets/images/number/3.png" alt="3"></figure>
+            2021年開放的新地圖繳交的累積物品超過6300個與8401個，就符合贈送獎品資格。
+          </li>
+          <li data-aos="zoom-in" data-aos-duration="1200">
+            <figure class="step-position"><img src="assets/images/number/4.png" alt="4"></figure>
+            2021年開放的新地圖繳交8,401個以上的玩家，可得兩項虛寶抽取機會。
+          </li>
+          <li data-aos="zoom-in" data-aos-duration="1400">
+            <figure class="step-position"><img src="assets/images/number/5.png" alt="5"></figure>
+            一個遊戲帳號僅限送兩次獎品。
+          </li>
+          <li data-aos="zoom-in" data-aos-duration="1600">
+            <figure class="step-position"><img src="assets/images/number/6.png" alt="6"></figure>
+            同遊戲帳號中，依繳交物品最多數量的角色，為機會獲得獎勵依據。
+          </li>
+        </ul>
+        <figure class="title-1-1 pt-1"><img src="assets/images/title-1-2.png" alt="注意事項" data-aos="zoom-in" data-aos-duration="1000"></figure>
+        <ul class="event-note" data-aos="zoom-in" data-aos-duration="500">
+          <li>繳交多少物品數量，可透過<em>雲海村民房 (xx.xx) xx道人</em>進行查詢。</li>
+          <li>以上活動本公司有調整活動辦法之修改、變更或暫停本活動之權利，如有未盡事宜，悉依相關規定或解釋，並得隨時補充公告說明，並保有本次活動最終解釋權。</li>
+        </ul>
+      </article>
+    </section>
+    <!-- 年度回收日結束.......................................... -->
+
+
+
+    <!-- 周年慶歡樂送........................................... -->
+    <section class="anniversary" id="c">
+      <article>
+        <figure class="happy-delivery" data-aos="zoom-in" data-aos-duration="1000"><img src="assets/images/title-2.png" alt="周年慶歡樂送"></figure>
+        <img src="assets/images/obj-6.png" alt="角色圖" class="obj-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="happy-box" data-aos="zoom-in" data-aos-duration="1000">
+          <p>玩家只需當天遊戲<em>在線時間累計達到 3 小時，即可有領取獎勵資格</em>，一天最高可領取 8 次獎勵，下線後，重新上線也可以繼續計算玩家在線時間。</p>
+          <ul>
+            <li>活動時間：<em>2024/07/03(三)</em> 維護開機後 ~ <em>2024/07/10(三)</em> 維護關機前</li>
+            <li>活動對象：<em>滿 60 級</em>以上(含60級)、角色已確認轉職的玩家在線即可領取</li>
+            <li>領取方式：尋找 NPC「<em>周年慶仙人</em>」領取。</li>
+            <li>活動地圖：臥虎高原、地煞洞二樓、月鏡湖、妖邪洞迷殿</li>
+          </ul>
+          <ul class="find-game-map p-2">
+            <li><a href="assets/images/maps/max/05.png" data-gallery="gallery2" class="glightbox"><img src="assets/images/maps/mix/05.png" alt="周年慶仙人"></a></li>
+            <li><a href="assets/images/maps/max/06.png" data-gallery="gallery2" class="glightbox"><img src="assets/images/maps/mix/06.png" alt="臥虎高原"></a></li>
+            <li><a href="assets/images/maps/max/07.png" data-gallery="gallery2" class="glightbox"><img src="assets/images/maps/mix/07.png" alt="地煞洞二樓"></a></li>
+            <li><a href="assets/images/maps/max/08.png" data-gallery="gallery2" class="glightbox"><img src="assets/images/maps/mix/08.png" alt="月鏡湖"></a></li>
+            <li><a href="assets/images/maps/max/09.png" data-gallery="gallery2" class="glightbox"><img src="assets/images/maps/mix/09.png" alt="妖邪洞迷殿"></a></li>
+          </ul>
+        </div>
+        <figure class="btn-gift-1 p-2" data-aos="zoom-in" data-aos-duration="1000">
+          <a href="" id="btnB">
+            <img src="assets/images/btn-gift-2.png" alt="活動獎勵">
+          </a>
+        </figure>
+      </article>
+    </section>
+    <!-- 周年慶歡樂送結束........................................ -->
+
+
+
+    <!-- 二十載簽到禮........................................... -->
+    <section class="twenty-years" id="d">
+      <article>
+        <figure class="twenty-years-title" data-aos="zoom-in" data-aos-duration="1000"><img src="assets/images/title-3.png" alt="二十載簽到禮"></figure>
+        <p data-aos="zoom-in" data-aos-duration="1000">活動時間：2024/07/03(三) 維護開機後 ～2024/07/31(三) 維護關機前<br>
+        活動NPC：活動專屬小女僕 (京城 59,222)</p>
+        <ul class="find-game-map p-2" data-aos="zoom-in" data-aos-duration="1000">
+          <li><a href="assets/images/maps/max/10.png" data-gallery="gallery3" class="glightbox"><img src="assets/images/maps/mix/10.png" alt="小女僕"></a></li>
+        </ul>
+        <img src="assets/images/obj-8.png" alt="角色圖" class="obj-8" data-aos="fade-left" data-aos-duration="1000">
+        <figure class="title-1-1 pb-5" data-aos="zoom-in" data-aos-duration="1000"><img src="assets/images/title-3-1.png" alt="活動辦法"></figure>
+        <ul class="twenty-years-list">
+          <li data-aos="zoom-in" data-aos-duration="200">需角色<em>等級 30 級</em>以上才可參與活動。</li>
+          <li data-aos="zoom-in" data-aos-duration="400">於活動期間，每日登入並維持<em>在線滿1小時</em>，即可至『<em>活動專屬小女僕</em>』進行『<em>簽到好康</em>』的一次抽取機會。</li>
+          <li data-aos="zoom-in" data-aos-duration="600">累積滿7次簽到，將可額外獲得『XXX(綁定)*1』。</li>
+          <li data-aos="zoom-in" data-aos-duration="800">累積滿15次簽到，將可額外獲得『XXX(綁定)*2』。</li>
+          <li data-aos="zoom-in" data-aos-duration="1000">活動期間內因故未登入遊戲時，可於活動時間內花費元寶進行補簽，補簽一天花費15元寶，補簽到後，簽完成所獲得的簽到獎勵會全部直接發送到京城的『宋貴妃』身上。</li>
+          <li data-aos="zoom-in" data-aos-duration="1200">總計1名角色於活動期間內最多只可獲得15次『簽到好康』的抽取機會。</li>
+          <li data-aos="zoom-in" data-aos-duration="1400">活動舉辦時第一次，必須要跟『活動專屬小女僕』進行對話才可以激活本活動，開始累積每日在線時間。</li>
+          <li data-aos="zoom-in" data-aos-duration="1600">系統開始計算角色的當天累計在線時間有以下二種方式：每天的第一次登入時間，或是找『活動專屬小女僕』進行對話。</li>
+          <li data-aos="zoom-in" data-aos-duration="1800">如果當天累計在線滿1小時的時間是已經過凌晨12點到第2天時，是只能找『活動專屬小女僕』進行補簽前一天的簽到，且第2天的計時要重新進行角色登出登入，或是找『活動專屬小女僕』進行對話才會開始。</li>
+        </ul>
+        <figure class="btn-gift-1 p-2" data-aos="zoom-in" data-aos-duration="1000">
+          <a href="" id="btnC">
+            <img src="assets/images/btn-gift-3.png" alt="好康獎勵">
+          </a>
+        </figure>
+
+      </article>
+    </section>
+    <!-- 二十載簽到禮結束........................................ -->
+
+
+
   </div><!--.ossian end-->
+
+
+  
+  <script>
+
+  function scrollSpy() {
+    // 選擇所有的 section 元素
+    var sections = document.querySelectorAll('section');
+    // 選擇導航欄中的所有連結
+    var navLinks = document.querySelectorAll('#navbar a');
+
+    // 當前 section 的索引
+    var currentSectionIndex = 0;
+
+    // forEach 所有的 section 元素
+    sections.forEach(function (section, index) {
+      // 取得每個 section 元素的頂部位置和高度
+      var sectionTop = section.offsetTop;
+      var sectionHeight = section.clientHeight;
+
+      // 檢查視窗的垂直滾動位置是否超過了每個 section 元素的中心點位置
+      if (window.pageYOffset >= sectionTop - sectionHeight / 2) {
+        // 如果是，將 currentSectionIndex 設置為該 section 的索引
+        currentSectionIndex = index;
+      }
+    });
+
+    // 移除所有連結的 .active
+    navLinks.forEach(function (link) {
+      link.classList.remove('active');
+    });
+
+    // 為當前的連結添加 .active
+    navLinks[currentSectionIndex].classList.add('active');
+  }
+
+  // 監聽滾動事件，當滾動事件觸發時，呼叫 scrollSpy 函式
+  window.addEventListener('scroll', scrollSpy);
+
+
+
+  // GLightbox
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+  });
+
+
+
+  // sweetalert2
+  // 當文件已經完全加載時執行
+  document.addEventListener('DOMContentLoaded', function () {
+    // 取得按鈕 A 元素
+    var btnA = document.getElementById('btnA');
+    // 為按鈕 A 元素添加點擊事件監聽器
+    btnA.addEventListener('click', function(event) {
+      // 阻止默認的超連結行為
+      event.preventDefault();
+      // 彈出 SweetAlert2 對話框
+      Swal.fire({
+        title: '活動獎品',
+        html: '<div>這是按鈕 A 彈出的 HTML 內容。</div><p>可以在這裡放置任何 HTML 元素。</p>',
+        confirmButtonText: '確定'
+      });
+    });
+
+    // 取得按鈕 B 元素
+    var btnB = document.getElementById('btnB');
+    // 為按鈕 B 元素添加點擊事件監聽器
+    btnB.addEventListener('click', function(event) {
+      // 阻止默認的超連結行為
+      event.preventDefault();
+      // 彈出 SweetAlert2 對話框
+      Swal.fire({
+        title: '活動獎勵',
+        html: '<div>這是按鈕 B 彈出的 HTML 內容。</div><p>可以在這裡放置任何 HTML 元素。</p>',
+        confirmButtonText: '確定'
+      });
+    });
+
+    // 取得按鈕 C 元素
+    var btnC = document.getElementById('btnC');
+    // 為按鈕 C 元素添加點擊事件監聽器
+    btnC.addEventListener('click', function(event) {
+      // 阻止默認的超連結行為
+      event.preventDefault();
+      // 彈出 SweetAlert2 對話框
+      Swal.fire({
+        title: '好康獎勵',
+        html: '<div>這是按鈕 C 彈出的 HTML 內容。</div><p>可以在這裡放置任何 HTML 元素。</p>',
+        confirmButtonText: '確定'
+      });
+    });
+  });
+
+
+
+  // AOS
+
+  AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000
+  });
+  AOS.refresh();
+  AOS.refreshHard();
+
+
+
+  </script>
 </body>
 </html>

@@ -1,12 +1,11 @@
 @import "base/reset";
 @import "base/var";
 @import "base/width";
-// @import "base/button";
-// @import "base/clearfix";
+@import "base/button";
+@import "base/clearfix";
 // @import "form/forms";
-// @import "table/table";
+@import "table/table";
 // @import "panel/panel";
-// @import "effect/poker";
 
 // 自訂的調整 ==================================================
 
@@ -26,7 +25,7 @@ body {
   color: $document-default-color;
   font-family: $document-font-family;
   font-size: $document-root-font-size;
-  background-color: #6d992a;
+  background-color: $document-bg-color;
   // safari 不支援
   scroll-behavior: smooth;
   word-wrap: break-word;
@@ -42,6 +41,10 @@ svg {
 
 .ossian {
   position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-overflow-scrolling : touch;
 }
 
 .container{

@@ -13,7 +13,9 @@
 ### 使用的套件
 
 - [locomotive-scroll](https://github.com/locomotivemtl/locomotive-scroll)
-- [PhotoSwipe](https://photoswipe.com)
+- [AOS](https://michalsnik.github.io/aos/)
+- [glightbox](https://biati-digital.github.io/glightbox/)
+- [sweetalert2](https://sweetalert2.github.io)
 
 ### Github 路徑
 
