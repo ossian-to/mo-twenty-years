@@ -60,11 +60,16 @@
   ul.twenty-years-list{
     padding: 2rem 2rem 2rem 3rem;
   }
+  ul.bao-list{
+    li{
+      width: calc(50% - 2rem);
+    }
+  }
 }
 
 @media only screen and (min-width: 500px){
   .ossian{
-    font-size: 1.65em;
+    // font-size: 1.65em;
     background-image: url(../images/bg.png);
     line-height: 1.5;
   }
@@ -133,6 +138,11 @@
   }
   ul.twenty-years-list{
     padding: 3rem 3rem 3rem 4rem;
+  }
+  ul.bao-list{
+    li{
+      width: calc(33% - 2rem);
+    }
   }
 }
 

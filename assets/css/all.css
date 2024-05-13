@@ -1552,7 +1552,7 @@ ul.event-note li em {
   background-color: #21123a;
   background-image: url(../images/bg-3.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center 300px;
 }
 
 .twenty-years-title {
@@ -1589,13 +1589,25 @@ ul.twenty-years-list li em {
   z-index: 1;
 }
 
+.r-server {
+  color: #ffe3bc;
+  background-color: #f36342;
+}
+.r-server article {
+  padding: 10em 1em;
+  text-align: center;
+}
+.r-server article h2 {
+  font-size: 6rem;
+}
+
 .swal2-container {
   font-family: serif, "Microsoft JhengHei", "微軟正黑體", arial, sans-serif !important;
 }
 
 div:where(.swal2-container) div:where(.swal2-popup) {
   background: #fff2c3;
-  border: 10px solid #8e572f;
+  border: 10px solid #f36342;
   border-radius: 20px;
   -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.85) inset, 0 -2px 1px rgba(255, 255, 255, 0.5) inset;
           box-shadow: 0 2px 1px rgba(255, 255, 255, 0.85) inset, 0 -2px 1px rgba(255, 255, 255, 0.5) inset;
@@ -1606,11 +1618,11 @@ div:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swa
 }
 
 .swal2-close {
-  color: #8e572f;
+  color: #f36342;
 }
 
 div:where(.swal2-container) h2:where(.swal2-title) {
-  padding: 0.25em 1em;
+  padding: 1em 1em 0.25em;
   color: black;
 }
 
@@ -1625,17 +1637,17 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 .swal2-html-container > ul li {
   text-align: left;
   line-height: 1.5;
-  border-bottom: 1px dotted #8e572f;
+  border-bottom: 1px dotted #f36342;
 }
 
 div:where(.swal2-container) .swal2-html-container {
   margin: initial;
-  padding: 0.5em 1em 1em 1em;
+  padding: 0.5em 1em;
 }
 
 .swal2-popup .swal2-styled {
   font-weight: bold;
-  background-color: #f75050;
+  background-color: #0084ff;
   border-radius: 8px;
   outline: none;
 }
@@ -1648,6 +1660,47 @@ div:where(.swal2-container) .swal2-html-container {
 
 div:where(.swal2-container) div:where(.swal2-actions) {
   margin: initial;
+}
+
+table.table tr th {
+  padding: 0.5rem 0.25rem;
+}
+table.table tr td {
+  padding: 0.25rem;
+}
+table.table tr td ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+table.table tr td:nth-child(even) {
+  text-align: initial;
+}
+
+table.table, table.table td, table.table th {
+  border: 1px solid #f0bb6e;
+}
+
+table.table th {
+  color: white;
+  background-color: #f36342;
+}
+
+ul.bao-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0 2rem;
+}
+ul.bao-list li {
+  border-bottom-color: #666;
 }
 
 @media only screen and (min-width: 0px) {
@@ -1705,10 +1758,12 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   ul.twenty-years-list {
     padding: 2rem 2rem 2rem 3rem;
   }
+  ul.bao-list li {
+    width: calc(50% - 2rem);
+  }
 }
 @media only screen and (min-width: 500px) {
   .ossian {
-    font-size: 1.65em;
     background-image: url(../images/bg.png);
     line-height: 1.5;
   }
@@ -1770,6 +1825,9 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   }
   ul.twenty-years-list {
     padding: 3rem 3rem 3rem 4rem;
+  }
+  ul.bao-list li {
+    width: calc(33% - 2rem);
   }
 }
 @media only screen and (min-width: 1184px) and (max-width: 1420px) {

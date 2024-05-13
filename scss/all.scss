@@ -284,7 +284,7 @@ ul.event-note{
   background-color: #21123a;
   background-image: url(../images/bg-3.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center 300px;
 }
 
 .twenty-years-title{
@@ -324,6 +324,21 @@ ul.twenty-years-list{
   z-index: 1;
 }
 
+
+// R服..............................................................................
+
+.r-server{
+  color: #ffe3bc;
+  background-color:$custom-2;
+  article{
+    padding: 10em 1em;
+    text-align: center;
+    h2{
+      font-size: 6rem;
+    }
+  }
+}
+
 // 自訂 sweetalert2 樣式 ............................................................
 
 .swal2-container{
@@ -352,7 +367,7 @@ div:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swa
 // sweetalert2 標題設定
 
 div:where(.swal2-container) h2:where(.swal2-title){
-  padding: 0.25em 1em;
+  padding: 1em 1em 0.25em;
   color: $document-default-color;
   // border-bottom: 3px dashed $custom-2;
 }
@@ -379,7 +394,7 @@ div:where(.swal2-container) div:where(.swal2-popup){
 
 div:where(.swal2-container) .swal2-html-container{
   margin: initial;
-  padding: 0.5em 1em 1em 1em;
+  padding: 0.5em 1em;
 }
 
 // sweetalert2 OK 的按鈕設定
@@ -400,6 +415,46 @@ div:where(.swal2-container) .swal2-html-container{
 
 div:where(.swal2-container) div:where(.swal2-actions){
   margin: initial;
+}
+table.table{
+  tr{
+    th{
+      padding: 0.5rem 0.25rem;
+    }
+    td{
+      padding: 0.25rem;
+      ul{
+        margin: 0;
+        padding: 0 0 0 1.5em;
+      }
+      &:nth-child(even){
+        text-align: initial;
+      }
+    }
+  }
+}
+table{
+  &.table,
+  &.table td,
+  &.table th {
+    border: 1px solid $custom-9;
+  }
+}
+
+table.table th {
+  color: white;
+  background-color:$custom-2;
+}
+
+ul.bao-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: flex-start;
+  gap: 0 2rem;
+  li{
+    border-bottom-color:#666;
+  }
 }
 
 
