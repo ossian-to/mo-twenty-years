@@ -16,6 +16,7 @@
 - [AOS](https://michalsnik.github.io/aos/)
 - [glightbox](https://biati-digital.github.io/glightbox/)
 - [sweetalert2](https://sweetalert2.github.io)
+- [Preloader](https://www.jqueryscript.net/loading/visual-percent-preloader.html)
 
 ### Github 路徑
 
