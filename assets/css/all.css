@@ -1072,6 +1072,9 @@ label.switch-open + input[type=checkbox] {
   }
 }
 @media only screen and (max-width: 840px) {
+  label.switch-open {
+    display: none;
+  }
   label.switch-open + input[type=checkbox]:checked ~ .nav-bar {
     overflow: hidden;
     position: fixed;
@@ -1733,8 +1736,9 @@ ul.bao-list li {
     width: 50px;
   }
   .obj-5 {
-    top: 450px;
-    left: calc(50% - 300px);
+    top: 500px;
+    left: calc(50% - 320px);
+    width: 600px;
   }
   .btn-gift-1.bg-p {
     padding-bottom: 18rem;
@@ -1803,6 +1807,7 @@ ul.bao-list li {
   .obj-5 {
     top: 140px;
     left: calc(50% + 160px);
+    width: initial;
   }
   .btn-gift-1.bg-p {
     padding-bottom: initial;
@@ -1817,7 +1822,7 @@ ul.bao-list li {
   }
   .obj-8 {
     top: 8rem;
-    left: calc(50% + 350px);
+    left: calc(50% + 200px);
     width: initial;
   }
   .title-1-1.pb-5 {

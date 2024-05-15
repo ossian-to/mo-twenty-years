@@ -140,6 +140,7 @@ label{
 @media only screen and (max-width: 840px){
   label{
     &.switch-open{
+      display: none;
       + input[type="checkbox"]{
         &:checked{
           ~ .nav-bar{
