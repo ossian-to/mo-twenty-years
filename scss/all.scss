@@ -457,6 +457,56 @@ ul.bao-list{
   }
 }
 
+// 浮水標
 
+ul.mark-right{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+  li{
+    max-width: 220px;
+    &:nth-child(1){
+      animation: flash 0.5s infinite;
+    }
+    &:nth-child(2){
+      animation: zoom 1s ease-in-out infinite;
+    }
+    a{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes flash {
+  0%{
+    filter:drop-shadow(0px 0px 0px #ffef40);
+  }
+  50%{
+    filter:drop-shadow(0px 0px 10px #ffef40);
+  }
+  100%{
+    filter:drop-shadow(0px 0px 0px #ffef40);
+  }
+}
+
+@keyframes zoom {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.85);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 
 @import "rwd"; // 自適應
