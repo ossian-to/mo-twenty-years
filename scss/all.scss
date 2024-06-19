@@ -278,7 +278,7 @@ ul.event-note{
 
 .twenty-years{
   position: relative;
-  padding: 0 1rem;
+  padding: 0 1rem 10rem 1rem;
   text-align: center;
   color: #f3ce9c;
   background-color: #21123a;
@@ -328,13 +328,101 @@ ul.twenty-years-list{
 // R服..............................................................................
 
 .r-server{
+  position: relative;
   color: #ffe3bc;
-  background-color:$custom-2;
+  background-color: #7f7076;
+  background-image: url(../images/r-server-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
   article{
-    padding: 10em 1em;
+    padding: 1rem 1rem 3rem 1rem;
     text-align: center;
     h2{
       font-size: 6rem;
+    }
+  }
+}
+
+.r-server-title{
+  position: relative;
+  margin: 0 auto;
+  padding: 5rem 0 0 0;
+  max-width: 778px;
+  z-index: 2;
+  img{
+    width: 100%;
+  }
+}
+
+.obj-9{
+  position: absolute;
+  top: -12rem;
+  // left: calc(50% - 77px);
+  z-index: 1;
+  img{
+    width: 100%;
+  }
+}
+
+.r-server-date{
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0e0a10;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.r-server-description{
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 900px;
+  // text-align: center;
+  color: #f3ce9c;
+  background-color: #0e0a10;
+  border-radius: 20px;
+  border: 4px solid #f3a642;
+  z-index: 1;
+  em{
+    color: #9ce8f3;
+    font-style: normal;
+  }
+}
+
+.discord-zone{
+  padding: 1.5rem 1rem 0;
+  text-align: center;
+  color: white;
+}
+
+.r-server-discord-link{
+  display: inline-block;
+  max-width: 336px;
+  img{
+    width: 100%;
+  }
+}
+
+ul.r-server-two-links{
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  list-style: none;
+  li{
+    max-width: 306px;
+    transition: transform 0.3s;
+    &:hover{
+      transform: scale(0.9);
+    }
+    a{
+      img{
+        width: 100%;
+      }
     }
   }
 }
@@ -348,6 +436,8 @@ ul.twenty-years-list{
 // sweetalert2 底色
 
 div:where(.swal2-container) div:where(.swal2-popup){
+  width: 100%;
+  max-width: 800px;
   background: $custom-1;
   border: 10px solid $custom-2;
   border-radius: 20px;
@@ -386,7 +476,7 @@ div:where(.swal2-container) div:where(.swal2-popup){
     padding-left: 1.5em;
     li{
       text-align: left;
-      line-height: 1.5;
+      line-height: 1;
       border-bottom: 1px dotted $custom-2;
     }
   }
@@ -395,6 +485,7 @@ div:where(.swal2-container) div:where(.swal2-popup){
 div:where(.swal2-container) .swal2-html-container{
   margin: initial;
   padding: 0.5em 1em;
+  font-size: 1rem;
 }
 
 // sweetalert2 OK 的按鈕設定
@@ -453,22 +544,61 @@ ul.bao-list{
   justify-content: flex-start;
   gap: 0 2rem;
   li{
+    padding: 0.5em 0;
     border-bottom-color:#666;
   }
 }
 
 // 浮水標
 
-ul.mark-right{
+label{
+  &.watermark-open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 1rem 1.35rem;
+    overflow: hidden;
+    position: fixed;
+    // bottom: 2em;
+    // right: 0;
+    // width: 1rem;
+    color: $nav-bg;
+    // border-top-left-radius: 20px;
+    // border-bottom-left-radius: 20px;
+    background-color: white;
+    z-index: 11;
+    cursor: pointer;
+
+    + input[type="checkbox"]{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      &:checked{
+        ~ .watermark{
+          right: 1rem
+        }
+      }
+    }
+  }
+}
+
+.watermark{
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
+  right: -250px;
+  bottom: 2rem;
+  z-index: 10;
+  transition: right 0.3s;
+}
+
+ul.mark-right{
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
-  z-index: 10;
   li{
     max-width: 220px;
     &:nth-child(1){
