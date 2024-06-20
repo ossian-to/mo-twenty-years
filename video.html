@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="assets/css/glightbox.css">
+    <script src="assets/js/glightbox.js"></script>
+</head>
+<body>
+    <video width="800" controls autoplay>
+        <source src="mo.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+
+
+    <a href="mo.mp4" class="glightbox">
+        <img src="path/to/thumbnail.jpg" alt="Play Video">
+    </a>
+
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
+</body>
+</html>

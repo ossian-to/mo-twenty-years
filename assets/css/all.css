@@ -1854,15 +1854,13 @@ ul.mark-right {
   list-style: none;
 }
 ul.mark-right li {
-  max-width: 220px;
-}
-ul.mark-right li:nth-child(1) {
-  -webkit-animation: flash 0.5s infinite;
-          animation: flash 0.5s infinite;
-}
-ul.mark-right li:nth-child(2) {
+  max-width: 180px;
   -webkit-animation: zoom 1s ease-in-out infinite;
           animation: zoom 1s ease-in-out infinite;
+}
+ul.mark-right li:nth-last-child(even) {
+  -webkit-animation: flash 0.5s infinite;
+          animation: flash 0.5s infinite;
 }
 ul.mark-right li a img {
   width: 100%;
