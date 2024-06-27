@@ -22,7 +22,8 @@
   ul.step{
     li{
       max-width: initial;
-      width: 48%;
+      width: 100%;
+      text-align: center;
     }
   }
   .step-position{
@@ -98,7 +99,8 @@
   ul.step{
     li{
       max-width: 100%;
-      width: 220px;
+      // width: 220px;
+      width: 300px;
     }
   }
   .step-position{
