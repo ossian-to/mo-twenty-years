@@ -588,7 +588,7 @@ label{
 .watermark{
   position: fixed;
   right: -250px;
-  bottom: 2rem;
+  bottom: 1rem;
   z-index: 10;
   transition: right 0.3s;
 }
@@ -600,7 +600,7 @@ ul.mark-right{
   padding: 0;
   list-style: none;
   li{
-    max-width: 180px;
+    max-width: 170px;
     animation: zoom 1s ease-in-out infinite;
     &:nth-last-child(even){
       animation: flash 0.5s infinite;
